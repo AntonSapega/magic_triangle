@@ -1,0 +1,204 @@
+body {
+	display: flex;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.settings {
+	position: relative;
+	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(126, 119, 119);
+	width: 450px;
+}
+
+.settings button {
+	margin: 10px;
+	width: 250px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 2px;
+	background-color: rgb(126, 119, 119);
+	color: rgb(255, 255, 255);
+	/* border-style: none; */
+	font-weight: 400;
+	transition: background-color 300ms ease-out 0.1s;
+}
+
+.settings button:hover {
+	background-color: rgb(100, 95, 95);
+	color: white;
+	cursor: pointer;
+}
+
+.settings button:active {
+	border: 2px solid whitesmoke;
+}
+
+.settings button:active, .settings button:focus, .representation .bootstrapStyle button:active, .representation .bootstrapStyle button:focus {
+	outline: none;
+}
+
+.representation .bootstrapStyle button {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background-color: white;
+	color: grey;
+	border: 1px solid rgb(126, 119, 119);
+	border-radius: 2px;
+	transition: background-color 300ms ease-out 0.1s;
+}
+
+.representation .bootstrapStyle button:hover {
+	background-color: rgb(241, 238, 238);
+	color: rgb(99, 98, 98);
+	border: 1px solid rgb(87, 82, 82);
+}
+
+
+
+.speed button {
+	display: inline-block;
+	width: 78px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.speed button:hover {
+	background-color: rgb(100, 95, 95);
+	color: white;
+	cursor: pointer;
+}
+
+.representation {
+	position: relative;
+	background-color: white;
+	width: 100%;
+}
+
+.iteration {
+	position: fixed;
+	bottom: 40px;
+	left: 35px;
+	width: 150px;
+	height: 15px;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+}
+
+ .pointA {
+	position: fixed; /*/////////////////////////////////*/
+	border: 1px solid black;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0px;
+	transform: translate(-50%, -50%);
+}
+
+.pointB {
+	position: fixed; /*///////////////////////////////*/
+	border: 1px solid black;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0px;
+	transform: translate(-50%, -50%);
+}
+
+.pointC {
+	position: fixed; /*/////////////////////////////////*/
+	border: 1px solid black;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0px;
+	transform: translate(-50%, -50%);
+}
+
+.pointA::after {
+	content: "A";
+	margin: 12px;
+	font-size: 18px;
+	color: red;
+}
+
+.pointB::after {
+	content: "B";
+	margin: 12px;
+	font-size: 18px;
+	color: red;
+}
+
+.pointC::after {
+	content: "C";
+	margin: 12px;
+	font-size: 18px;
+	color: red;
+} 
+
+
+.point {
+	position: fixed; /**************************************/
+	border: 1px solid black;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0px;
+}
+
+.point::after {
+	content: 'Random dot';
+	margin: 12px;
+	font-size: 16px;
+	color: blue;
+}
+
+.currentPoint {
+	position: fixed; /************************************/
+	border: 1px solid red;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 0px;
+}
+
+.currentPoint::after {
+	width: 100px;
+	content: 'Current dot';
+	font-size: 14px;
+	color: red;
+}
+
+.currentPointWithoutText {
+	position: fixed;  /*************************************/
+	border: 1px solid black;
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0px;
+}
+
+.currentPointWithoutText::after {
+	content: '';
+}
+
+
+#copyright {
+	position: fixed;
+	font: inherit;
+	color: black;
+	font-size: inherit;
+	bottom: 15px;
+	right: 15px;
+}
